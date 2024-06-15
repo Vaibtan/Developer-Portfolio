@@ -6,30 +6,29 @@ import React from 'react'
 
 const links = [
     {
-        name: "home",
+        name: "Home",
         path: "/",
     },
     {
-        name: "services",
+        name: "Services",
         path: "/services",
     },
     {
-        name: "resume",
-        path: "/resume",
+        name: "Portfolio",
+        path: "/portfolio",
     },
     {
-        name: "work",
-        path: "/work",
+        name: "Projects",
+        path: "/projects",
     },
     {
-        name: "contact",
+        name: "Contact",
         path: "/contact",
     },
 ];
 
 const Nav = () => {
     const pathname = usePathname();
-    console.log(pathname);
     return (
         <nav className = "flex gap-8">
         {links.map((link, index) => {
